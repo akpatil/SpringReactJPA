@@ -18,6 +18,7 @@ var App = React.createClass({
 		
 	},
 	getProductSuccess: function(response) {
+		console.log(response);
 		this.setState({
 			employees: response
 		});
@@ -27,7 +28,6 @@ var App = React.createClass({
 				<div className="container">
 					<Header />
 					<EmployeeList employees={this.state.employees} />
-					<div>{this.state.employees}</div>
 				</div>
 		);
 	}

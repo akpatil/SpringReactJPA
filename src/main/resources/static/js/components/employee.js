@@ -3,6 +3,9 @@ var Employee = React.createClass({
 		var empName = this.props.employee.fullName;
 		var empHireDate = this.props.employee.hireDate;
 		
+		console.log("From Employee: " + empName);
+		console.log("From Employee: " + empHireDate);
+		
 		return (
 			<div className="col-sm-3">
 				<div className="col-item">
